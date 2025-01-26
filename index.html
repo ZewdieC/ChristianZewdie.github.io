@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Wedding Invitation</title>
+        <style>
+           body{
+               background-color:rgb(112, 112, 112);
+           }
+
+            #tell{
+                font-family:'Great Vibes', cursive;
+               font-weight:bold;         
+                color:rgb(255, 255, 255);
+                border-radius:12px;
+                text-align:center;
+                z-index:2;
+                animation: togglecolor 1s infinite;/* initiates on off protocol, for color of 1st header */
+            }
+            
+            @keyframes togglecolor {
+                0% {
+                    color:rgb(112, 112, 112);
+                }
+                50% {
+                     color:rgb(232, 227, 232);
+                }
+                100%{
+                     color:rgb(255, 255, 255);
+                }
+                
+            }
+            #home {
+                position:relative;
+                top:50px;
+                width:100%;
+            }
+            
+            #nav{
+               
+                border:ridge 10px;
+                width:100%;
+                position:fixed;
+                top:0;
+                left:0;
+                z-index:2;
+                background-color:white;
+                overflow:hidden;
+            }
+            
+            #nav a{
+                padding:10px 35px;
+                text-decoration:none;
+                text-align:center;
+                float:left;
+                display:block;
+                
+            }
+           #who{
+               width:100px;
+           }
+            #juliet{
+                position:relative;
+                width:200px;
+                float: right;
+                margin-right:50px;
+                border:rigded;
+            }
+          #ring{
+              position:absolute;
+              top:140px;
+              left:0;
+              width:280px;
+          }
+          
+          #invitation{
+              clear:both;
+              display:blocked;
+              position:absolute;
+              margin-top:150px;
+          }
+          #title{
+              text-align:center;
+              width:400px;
+              font-family:monospace;
+              color:white;
+          }
+          #letter{
+              background-color:rgb(232, 230, 197);
+              border:5px dashed black;
+              padding:8px;
+          }
+         #schedule{
+              clear:both;
+              display:blocked;
+              position:absolute;
+              margin-top:600px;
+         }
+         
+         table, td{
+             border:2px, solid, rgb(115, 101, 55);
+             background-color:rgb(232, 230, 197);
+             width: 300px;
+             margin-left:60px;
+         } 
+         
+         tr,td:hover {
+             background-color:rgb(222, 31, 133);
+             
+         }
+         
+        th {
+            position:sticky;
+        }
+        </style>
+    </head>
+    <body>
+        
+<!-- Navigation Bar --> 
+
+       <div id="nav">
+                <a href="#home">Home</a>
+                <a href="#invitation">A Timeless Invitation</a>
+                <a href="#schedule">Schedule</a>
+            </div>
+            
+<!-- Home Page -->
+
+        <div id="home">
+        
+         <h1 id="tell" >We are getting married!           </h1>
+            
+        <h2 style="display:inline; color:rgb(214, 163, 101);" > Romeo and Juliet </h2>
+            
+        <img id="juliet" src="https://upload.wikimedia.org/wikipedia/en/4/41/Weddingdress2024.jpg" >
+        <img id="ring" src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/space/collisioncircle.png">
+        <img src="https://cdn.kastatic.org/third_party/javascript-khansrc/live-editor/build/images/cute/Heart.png">
+        
+        </div>
+
+<!-- Second Page -->        
+        <div id="invitation">
+            <h2 id="title">A Timeless Invitation</h2>
+            <p id="letter">A Love Letter from Romeo & Juliet<br><br>
+
+Dearest Friends and Family, <br> 
+
+Once, in fair Verona, amidst whispered feuds and moonlit gardens, our eyes met, and our hearts knew a love that could not be denied. Against all odds, our story began—a tale of stolen glances, secret vows, and an unbreakable bond.  
+<br><br>
+Now, we have chosen to leave the shadows of the past behind and step into the light of a new chapter. With joy in our hearts, we invite you to join us as we celebrate the union of our love, a promise that transcends time.  
+<br><br>
+Let us come together to honor love’s triumph, laughter’s melody, and the beauty of shared dreams. Your presence will make this moment all the more magical.  
+<br><br>
+With all our love,<br>  
+Romeo & Juliet</p>
+        </div>
+
+<!-- Last Page -->        
+        <div id="schedule">
+        
+        <h2 id="title">Schedule<br>(30/02/2025)</h2>
+            <table>
+                <tr>
+                    <th>Time</th>
+                    <th>Event</th>
+                </tr>
+                <tr>
+                    <td>3:00 PM</td>
+                    <td>Guest Arrival -Doors open, light refreshments served.</td>
+                </tr>
+                <tr>
+                    <td>3:30 PM</td>
+                    <td>Ceremony Begins - The coouple exchange vows.</td>
+                </tr>
+                <tr>
+                    <td>4:15 PM</td>
+                    <td>Cocktail Hour- Enjoy drinks</td>
+                </tr>
+                <tr>
+                    <td>5:30 PM</td>
+                    <td>Recieption Begins - The Celebration officially starts</td>
+                </tr>
+                <tr>
+                    <td>6:00 PM</td>
+                    <td>Dinner is served - Enjoy a delicious meal.</td>
+                </tr>
+                <tr>
+                    <td>7:30 PM</td>
+                    <td>Speeches & Toasts - Heartfelt words from loved ones.</td>
+                </tr>
+                <tr>
+                    <td>8:00 PM</td>
+                    <td>Dancing & Celebration - Let the party begin!</td>
+                </tr>
+                <tr>
+                    <td>10:00 PM</td>
+                    <td>Cake Cutting - A sweet tradition and a moment to remember.</td>
+                </tr>
+                <tr>
+                    <td>11:00 PM</td>
+                    <td>Farewell - Bid the newlyweds goodbye as they begin their journey together</td>
+                </tr>
+            </table>
+        </div>
+    </body>
+</html>
